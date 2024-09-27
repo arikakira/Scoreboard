@@ -8,9 +8,14 @@ public class Scoreboard{
     public Scoreboard(String one, String two) {
         teamOne = one;
         teamTwo = two;
+        activeTeam = teamOne;
+    }
+
+    public void recordPlay(int score)
+    {
     }
 
     public String getScore(){
-        return null;
+        return teamOneScore + "-" + teamTwoScore + "-" + activeTeam;
     }
 }
